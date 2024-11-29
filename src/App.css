@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0;
   padding: 0;
 }
@@ -30,6 +29,12 @@ body {
 }
 
 @media (max-width: 480px) {
+  .form-title,
+  .form-status,
+  .form-sort,
+  .form-category {
+    margin: 10px;
+  }
   .form-title {
     font-size: 20px;
   }
@@ -55,6 +60,12 @@ body {
     padding: 10px;
     margin: 0 auto;
   }
+  .form-title,
+  .form-status,
+  .form-sort,
+  .form-category {
+    margin: 5px;
+  }
 
   .project-header,
   .project-table {
@@ -69,7 +80,7 @@ body {
 
   .status-buttons {
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 9px;
   }
 
   .status-button {
@@ -90,5 +101,21 @@ body {
   .project-table td {
     padding: 8px;
     font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .form-title,
+  .form-status,
+  .form-sort,
+  .form-category {
+    margin: 10px;
+  }
+  .status-buttons {
+    gap: 10px;
   }
 }
