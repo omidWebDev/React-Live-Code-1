@@ -1,0 +1,94 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-background: #f9f9f9;
+  --color-border: #ccc;
+  --color-border-hover: #888;
+  --color-primary: #4caf50;
+  --color-secondary: #e0e0e0;
+  --color-text: #000;
+  --color-text-light: #fff;
+  --color-hover: #f1f1f1;
+  --color-border: #ddd;
+  --color-text-muted: #777;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/public/fonts/webfonts/Vazirmatn-FD-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Vazirmatn", Arial, sans-serif;
+  direction: rtl;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 20px;
+  }
+
+  .status-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .project-table th,
+  .project-table td {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .project-table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .project-header,
+  .project-table {
+    width: 90%;
+  }
+
+  .form-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+  }
+
+  .status-buttons {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .status-button {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .sort-select,
+  .category-select {
+    width: 100%;
+  }
+
+  .project-table thead {
+    font-size: 14px;
+  }
+
+  .project-table th,
+  .project-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

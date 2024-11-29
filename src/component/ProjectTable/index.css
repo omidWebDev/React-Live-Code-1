@@ -1,0 +1,42 @@
+.project-table {
+  width: 70%;
+  margin: 20px auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.project-table thead {
+  max-width: 288px;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+.project-table th,
+.project-table td {
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.project-table tbody tr:nth-child(even) {
+  background-color: var(--color-background);
+}
+
+.project-table tbody tr:hover {
+  background-color: var(--color-hover);
+}
+
+.project-table tbody tr td {
+  line-height: 1.5;
+}
+
+.project-table tbody tr td:first-child {
+  font-weight: bold;
+}
+
+.project-table td[colspan="5"] {
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-text-muted);
+}
